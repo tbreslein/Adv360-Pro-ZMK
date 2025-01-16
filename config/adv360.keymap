@@ -27,8 +27,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
+        tapping-term-ms = <175>;
+        quick_tap_ms = <150>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
@@ -42,7 +42,7 @@
             bindings = <
  &kp C_PLAY   &kp CARET    &kp PLUS     &kp LBRC     &kp LPAR  &kp MINUS               &tog 1                                                                &tog 4  &kp EQUAL     &kp RPAR     &kp RBRC   &kp ASTRK     &kp DOLLAR  &kp C_MUTE
   &kp TILDE       &kp Q       &kp W        &kp E        &kp R      &kp T             &kp AMPS                                                              &kp PIPE      &kp Y        &kp U        &kp I       &kp O          &kp P    &kp BSLH
-    &kp ESC  &mt LGUI A  &mt LALT S  &mt LSHFT D  &mt LCTRL F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &mt RCTRL J  &mt RSHFT K  &mt LALT L  &mt RGUI SEMI    &kp APOS
+    &kp ESC  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI    &kp APOS
    &kp LBKT       &kp Z       &kp X        &kp C        &kp V      &kp B                                   &kp HOME                   &kp PG_UP                          &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH    &kp RBKT
       &mo 2   &kp GRAVE    &kp HASH  &kp PERCENT    &kp UNDER                       &lt 1 TAB   &kp SPACE   &kp END                   &kp PG_DN  &kp BSPC   &kp RET                &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &mo 2
             >;
