@@ -40,31 +40,31 @@
 
         default_layer {
             bindings = <
- &kp EQUAL   &kp EXCL    &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                   &tog 1                                                                  &mo 3  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E       &kp R        &kp T                &kp PG_UP                                                             &kp C_MUTE      &kp Y     &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D       &kp F        &kp G            &kp PAGE_DOWN  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL  &kp C_PLAY      &kp H     &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C       &kp V        &kp B                                      &kp HOME                  &kp PG_UP                             &kp N     &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT   &kp RIGHT                               &kp ESC  &kp SPACE   &kp END                  &kp PG_DN   &kp BSPC     &kp RET             &kp DOWN     &kp UP  &kp LBKT  &kp RBKT      &mo 2
+ &kp C_PLAY    &kp CARET     &kp PLUS     &kp LBRC    &kp LPAR  &kp MINUS               &tog 1                                                                &tog 4  &kp EQUAL    &kp RPAR    &kp RBRC    &kp ASTRK      &kp DOLLAR  &kp C_MUTE
+  &kp TILDE        &kp Q        &kp W        &kp E       &kp R      &kp T             &kp AMPS                                                              &kp PIPE      &kp Y       &kp U       &kp I        &kp O           &kp P    &kp BSLH
+    &kp ESC  &mt LSHFT A  &mt LCTRL S   &mt LALT D  &mt LGUI F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &mt RGUI J  &mt LALT K  &mt RCTRL L  &mt RSHFT SEMI    &kp APOS
+   &kp LBKT        &kp Z        &kp X        &kp C       &kp V      &kp B                                   &kp HOME                   &kp PG_UP                          &kp N       &kp M   &kp COMMA      &kp DOT        &kp FSLH    &kp RBKT
+      &mo 2    &kp GRAVE     &kp HASH  &kp PERCENT   &kp UNDER                       &lt 1 TAB   &kp SPACE   &kp END                   &kp PG_DN  &kp BSPC   &kp RET               &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT       &mo 2
             >;
         };
 
         layer_num {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5             &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T              &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G              &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp ESC  &kp SPACE   &kp END                  &kp PG_DN   &kp BSPC  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                        &trans  &trans        &trans        &trans        &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                        &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans        &trans  &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                        &trans        &kp N1        &kp N2        &kp N3  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &kp NUMBER_0  &trans                &trans        &trans        &trans  &trans  &trans
             >;
         };
 
         layer_fn {
             bindings = <
- &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &trans                                                   &mo 3  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans   &trans   &trans   &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &trans                                                  &trans  &kp F7        &kp F8        &kp F9  &kp F10  &kp F11  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans    &kp C_PREV    &kp C_NEXT   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &kp C_VOL_DN  &kp C_VOL_UP   &trans   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                &trans        &trans   &trans   &trans   &trans
             >;
         };
 
@@ -80,11 +80,11 @@
 
         layer_gaming {
             bindings = <
-  &none   &none   &none   &none   &none   &none            &none                                                  &trans   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none            &none                                                   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none                            &none                   &none                   &none   &none   &none   &none   &none   &none
- &trans   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none           &none   &none   &none   &none  &trans
+  &kp LBKT  &kp N1  &kp N2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5             &trans                                                      &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp RBKT
+    &trans  &trans  &trans        &trans        &trans        &trans             &trans                                                      &trans        &trans        &trans        &trans        &trans        &trans     &trans
+    &trans   &kp A   &kp S         &kp D         &kp F        &trans             &trans  &kp LALT  &kp LGUI                  &trans  &trans  &trans        &trans         &kp J         &kp K         &kp L      &kp SEMI     &trans
+ &kp LSHFT  &trans  &trans        &trans        &trans        &trans                                 &trans                  &trans                        &trans        &trans        &trans        &trans        &trans  &kp RSHFT
+ &kp LCTRL  &trans  &trans        &trans        &trans                          &kp TAB    &trans    &trans                  &trans  &trans  &trans                      &trans        &trans        &trans        &trans     &trans
             >;
         };
 
