@@ -44,7 +44,7 @@
   &kp TILDE       &kp Q       &kp W        &kp E        &kp R      &kp T             &kp AMPS                                                              &kp PIPE      &kp Y        &kp U        &kp I       &kp O          &kp P    &kp BSLH
     &kp ESC  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI    &kp APOS
    &kp LBKT       &kp Z       &kp X        &kp C        &kp V      &kp B                                   &kp HOME                   &kp PG_UP                          &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH    &kp RBKT
-      &mo 2   &kp GRAVE    &kp HASH  &kp PERCENT    &kp UNDER                       &kp SPACE  &lt 1 TAB   &kp END                   &kp PG_DN  &kp RET   &kp BSPC                &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &mo 2
+      &mo 2   &kp GRAVE    &kp HASH  &kp LEFT    &kp RIGHT                       &kp SPACE  &lt 1 TAB   &kp END                   &kp PG_DN  &kp RET   &kp BSPC                &kp DOWN     &kp UP      &kp UNDER      &kp PERCENT       &mo 2
             >;
         };
 
