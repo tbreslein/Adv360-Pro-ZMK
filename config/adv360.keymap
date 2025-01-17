@@ -27,8 +27,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
         #binding-cells = <2>;
-        tapping-term-ms = <175>;
-        quick_tap_ms = <150>;
+        tapping-term-ms = <180>;
+        quick_tap_ms = <175>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
@@ -44,7 +44,7 @@
   &kp TILDE       &kp Q       &kp W        &kp E        &kp R      &kp T             &kp AMPS                                                              &kp PIPE      &kp Y        &kp U        &kp I       &kp O          &kp P    &kp BSLH
     &kp ESC  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F      &kp G             &kp EXCL  &caps_word  &kp CAPS                  &kp INSERT   &kp DEL    &kp AT      &kp H  &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI    &kp APOS
    &kp LBKT       &kp Z       &kp X        &kp C        &kp V      &kp B                                   &kp HOME                   &kp PG_UP                          &kp N        &kp M    &kp COMMA     &kp DOT       &kp FSLH    &kp RBKT
-      &mo 2   &kp GRAVE    &kp HASH  &kp PERCENT    &kp UNDER                       &lt 1 TAB   &kp SPACE   &kp END                   &kp PG_DN  &kp BSPC   &kp RET                &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &mo 2
+      &mo 2   &kp GRAVE    &kp HASH  &kp PERCENT    &kp UNDER                       &kp SPACE  &lt 1 TAB   &kp END                   &kp PG_DN  &kp RET   &kp BSPC                &kp LEFT     &kp DOWN      &kp UP      &kp RIGHT       &mo 2
             >;
         };
 
@@ -54,7 +54,7 @@
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                        &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans        &trans  &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                        &trans        &kp N1        &kp N2        &kp N3  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &kp NUMBER_0  &trans                &trans        &trans        &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &kp NUMBER_0                &trans        &trans        &trans  &trans  &trans
             >;
         };
 
