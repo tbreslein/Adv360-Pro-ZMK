@@ -39,21 +39,21 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp EXCL    &kp AT      &kp HASH      &kp DOLLAR   &kp PERCENT  &none                                                                              &none    &kp CARET  &kp AMPS     &kp ASTRK    &kp LPAR    &kp RPAR       &kp EQUAL
-&kp PIPE   &kp Q       &kp W       &kp E         &kp R        &kp T        &none                                                                              &none    &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BACKSLASH
-&kp DQT    &hm LGUI A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F  &kp G        &none      &kp GRAVE      &none                   &none                &none       &none    &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SINGLE_QUOTE
-&kp UNDER  &kp Z       &kp X       &kp C         &kp V        &kp B                                  &kp ESCAPE              &none                                     &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
-&none      &none       &none       &none         &none                     &kp SPACE  &kp BACKSPACE  &lt 1 LEFT_BRACKET      &lt 1 RIGHT_BRACKET  &kp DELETE  &kp RET             &none        &none        &none       &none          &none
+&kp ESCAPE  &kp EXCL    &kp AT      &kp HASH      &kp DOLLAR   &kp PERCENT  &none                                                                              &none    &kp CARET  &kp AMPS     &kp ASTRK    &kp LPAR    &kp RPAR       &kp EQUAL
+&kp PIPE    &kp Q       &kp W       &kp E         &kp R        &kp T        &none                                                                              &none    &kp Y      &kp U        &kp I        &kp O       &kp P          &kp BACKSLASH
+&kp DQT     &hm LGUI A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F  &kp G        &none      &kp GRAVE      &none                   &none                &none       &none    &kp H      &hm RCTRL J  &hm RSHFT K  &hm LALT L  &hm RGUI SEMI  &kp SINGLE_QUOTE
+&kp UNDER   &kp Z       &kp X       &kp C         &kp V        &kp B                                  &kp TAB                 &none                                     &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
+&none       &none       &none       &none         &none                     &kp SPACE  &kp BACKSPACE  &lt 1 LEFT_BRACKET      &lt 1 RIGHT_BRACKET  &kp DELETE  &kp RET             &none        &none        &none       &none          &none
             >;
         };
 
         keypad {
             bindings = <
-&bootloader  &kp F1        &kp F2    &kp F3    &kp F4    &trans          &trans                                            &trans        &trans           &trans              &trans        &trans             &trans    &bootloader
+&trans       &kp F1        &kp F2    &kp F3    &kp F4    &trans          &trans                                            &trans        &trans           &trans              &trans        &trans             &trans    &trans
 &trans       &kp F5        &kp F6    &kp F7    &kp F8    &kp C_NEXT      &trans                                            &trans        &kp C_VOLUME_UP  &kp N7              &kp N8        &kp N9             &trans    &trans
 &trans       &kp F9        &kp F10   &kp F11   &kp F12   &kp C_PP        &trans  &trans    &trans      &trans  &trans      &trans        &kp C_MUTE       &hm RCTRL NUMBER_4  &hm RSHFT N5  &hm LALT NUMBER_6  &kp LGUI  &trans
 &trans       &msc SCRL_UP  &mkp MB3  &mkp MB2  &mkp MB1  &kp C_PREVIOUS                    &trans      &trans                            &kp C_VOL_DN     &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3       &trans    &tog 2
-&trans       &trans        &trans    &trans    &trans                    &trans  &kp CAPS  &trans      &trans  &caps_word  &kp NUMBER_0                   &trans              &trans        &trans             &trans    &trans
+&bootloader  &trans        &trans    &trans    &trans                    &trans  &kp CAPS  &trans      &trans  &caps_word  &kp NUMBER_0                   &trans              &trans        &trans             &trans    &bootloader
             >;
         };
 
