@@ -8,6 +8,11 @@
  * This file was generated automatically. You may or may not want to
  * edit it directly.
  */
+/*
+ * keymap {
+ * compatible = "zmk,keymap";
+ */
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -37,9 +42,6 @@
     };
 
     combos { compatible = "zmk,combos"; };
- 
-    // keymap {
-    //    compatible = "zmk,keymap";
 
     keymap {
         default_layer {
