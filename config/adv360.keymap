@@ -39,15 +39,6 @@
 
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        ctrl_com_tab: ctrl_com_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(COMMA) &kp TAB>;
-            label = "CTRL_COM_TAB";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +48,7 @@
 &kp AT         &kp PERCENT     &kp ASTRK             &kp PLUS     &kp EQUAL    &kp EXCL  &kp CAPS                                                         &caps_word     &kp AMPS  &kp CARET       &kp DOLLAR    &kp UNDER   &kp DOUBLE_QUOTES  &kp PIPE
 &kp ESCAPE     &kp Q           &kp W                 &kp E        &kp R        &kp T     &kp HOME                                                         &kp PAGE_UP    &kp Y     &kp U           &kp I         &kp O       &kp P              &kp BSLH
 &kp MINUS      &hm LGUI A      &hm LALT S            &hm LCTRL D  &hm LSHFT F  &kp G     &kp END    &mo 2  &kp GRAVE        &tog 1         &mo 4          &kp PAGE_DOWN  &kp H     &hm RSHFT J     &hm RCTRL K   &hm LALT L  &hm RGUI SEMI      &kp SQT
-&kp LBKT       &kp Z           &kp X                 &kp C        &kp V        &kp B                       &kp TAB          &ctrl_com_tab                                &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH           &kp RBKT
+&kp LBKT       &kp Z           &kp X                 &kp C        &kp V        &kp B                       &kp TAB          &kp LC(COMMA)                                &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH           &kp RBKT
 &kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT     &kp RIGHT              &kp SPACE  &mo 3  &kp LS(TAB)      &kp DEL        &kp BACKSPACE  &kp RETURN               &kp DOWN_ARROW  &kp UP_ARROW  &kp RPAR    &kp RIGHT_BRACE    &kp GREATER_THAN
             >;
         };
