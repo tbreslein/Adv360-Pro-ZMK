@@ -39,28 +39,37 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        ctrl_com_tab: ctrl_com_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(COMMA) &kp TAB>;
+            label = "CTRL_COM_TAB";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "base";
             bindings = <
-&kp AT         &kp PERCENT     &kp ASTRK             &kp PLUS     &kp EQUAL    &kp EXCL  &caps_word                                                      &kp CAPS       &kp AMPS  &kp CARET       &kp DOLLAR    &kp UNDER   &kp DOUBLE_QUOTES  &kp PIPE
-&kp ESCAPE     &kp Q           &kp W                 &kp E        &kp R        &kp T     &kp HOME                                                        &kp PAGE_UP    &kp Y     &kp U           &kp I         &kp O       &kp P              &kp BSLH
-&kp MINUS      &hm LGUI A      &hm LALT S            &hm LCTRL D  &hm LSHFT F  &kp G     &kp END     &mo 2  &kp GRAVE        &tog 1       &mo 4          &kp PAGE_DOWN  &kp H     &hm RSHFT J     &hm RCTRL K   &hm LALT L  &hm RGUI SEMI      &kp SQT
-&kp LBKT       &kp Z           &kp X                 &kp C        &kp V        &kp B                        &kp TAB          &kp LC(TAB)                                &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH           &kp RBKT
-&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT     &kp RIGHT              &kp SPACE   &mo 3  &kp LS(TAB)      &kp DEL      &kp BACKSPACE  &kp RETURN               &kp DOWN_ARROW  &kp UP_ARROW  &kp RPAR    &kp RIGHT_BRACE    &kp GREATER_THAN
+&kp AT         &kp PERCENT     &kp ASTRK             &kp PLUS     &kp EQUAL    &kp EXCL  &kp CAPS                                                         &caps_word     &kp AMPS  &kp CARET       &kp DOLLAR    &kp UNDER   &kp DOUBLE_QUOTES  &kp PIPE
+&kp ESCAPE     &kp Q           &kp W                 &kp E        &kp R        &kp T     &kp HOME                                                         &kp PAGE_UP    &kp Y     &kp U           &kp I         &kp O       &kp P              &kp BSLH
+&kp MINUS      &hm LGUI A      &hm LALT S            &hm LCTRL D  &hm LSHFT F  &kp G     &kp END    &mo 2  &kp GRAVE        &tog 1         &mo 4          &kp PAGE_DOWN  &kp H     &hm RSHFT J     &hm RCTRL K   &hm LALT L  &hm RGUI SEMI      &kp SQT
+&kp LBKT       &kp Z           &kp X                 &kp C        &kp V        &kp B                       &kp TAB          &ctrl_com_tab                                &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH           &kp RBKT
+&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT     &kp RIGHT              &kp SPACE  &mo 3  &kp LS(TAB)      &kp DEL        &kp BACKSPACE  &kp RETURN               &kp DOWN_ARROW  &kp UP_ARROW  &kp RPAR    &kp RIGHT_BRACE    &kp GREATER_THAN
             >;
         };
 
         gaming {
             display-name = "gaming";
             bindings = <
-&kp ESC    &kp N1            &kp N2             &kp N3    &kp N4     &kp N5  &none                                                              &none          &kp N6  &kp N7          &kp N8        &kp N9      &kp N0         &kp EQUAL
-&kp TAB    &kp Q             &kp W              &kp E     &kp R      &kp T   &kp HOME                                                           &kp PG_UP      &kp Y   &kp U           &kp I         &kp O       &kp P          &kp BSLH
-&kp LSHFT  &kp A             &kp S              &kp D     &kp F      &kp G   &kp END    &mo 2      &kp GRAVE        &trans       &mo 4          &kp PAGE_DOWN  &kp H   &hm RCTRL J     &hm RSHFT K   &hm LALT L  &hm RGUI SEMI  &kp SQT
-&kp LALT   &kp Z             &kp X              &kp C     &kp V      &kp B                         &kp TAB          &kp LC(TAB)                                &kp N   &kp M           &kp COMMA     &kp DOT     &kp FSLH       &kp MINUS
-&none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LS(TAB)      &kp DEL      &kp BACKSPACE  &kp RET                &kp DOWN_ARROW  &kp UP_ARROW  &none       &none          &none
+&kp F1        &kp N1            &kp N2             &kp N3    &kp N4     &kp N5  &kp CAPS                                                             &caps_word     &kp N6  &kp N7          &kp N8        &kp N9      &kp N0         &kp EQUAL
+&kp ESCAPE    &kp Q             &kp W              &kp E     &kp R      &kp T   &kp HOME                                                             &kp PG_UP      &kp Y   &kp U           &kp I         &kp O       &kp P          &kp BSLH
+&kp LSHFT     &kp A             &kp S              &kp D     &kp F      &kp G   &kp END    &mo 2      &kp GRAVE        &trans         &mo 4          &kp PAGE_DOWN  &kp H   &hm RCTRL J     &hm RSHFT K   &hm LALT L  &hm RGUI SEMI  &kp SQT
+&kp LALT      &kp Z             &kp X              &kp C     &kp V      &kp B                         &kp TAB          &ctrl_com_tab                                &kp N   &kp M           &kp COMMA     &kp DOT     &kp FSLH       &kp MINUS
+&kp LS(LALT)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LCTRL  &kp LS(TAB)      &kp DEL        &kp BACKSPACE  &kp RET                &kp DOWN_ARROW  &kp UP_ARROW  &none       &none          &none
             >;
         };
 
