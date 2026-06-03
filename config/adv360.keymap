@@ -45,7 +45,7 @@
         default_layer {
             display-name = "base";
             bindings = <
-&kp AT         &kp PERCENT     &kp ASTRK             &kp PLUS     &kp EQUAL    &kp EXCL  &kp CAPS                                                           &caps_word     &kp AMPS  &kp CARET       &kp DOLLAR    &kp UNDER   &kp DOUBLE_QUOTES  &kp PIPE
+&kp AT         &kp PERCENT     &kp ASTRK             &kp PLUS     &kp EQUAL    &kp EXCL  &kp CAPS                                                           &caps_word     &kp AMPS  &kp CARET       &kp DOLLAR    &kp UNDER   &kp DOUBLE_QUOTES  &kp HASH
 &kp ESCAPE     &kp Q           &kp W                 &kp E        &kp R        &kp T     &kp HOME                                                           &kp PAGE_UP    &kp Y     &kp U           &kp I         &kp O       &kp P              &kp BSLH
 &kp MINUS      &hm LGUI A      &hm LALT S            &hm LCTRL D  &hm LSHFT F  &kp G     &kp END    &kp TILDE  &kp GRAVE          &tog 1         &mo 4      &kp PAGE_DOWN  &kp H     &hm RSHFT J     &hm RCTRL K   &hm LALT L  &hm RGUI SEMI      &kp SQT
 &kp LBKT       &kp Z           &kp X                 &kp C        &kp V        &kp B                           &kp LC(COMMA)      &kp LC(COMMA)                            &kp N     &kp M           &kp COMMA     &kp DOT     &kp FSLH           &kp RBKT
